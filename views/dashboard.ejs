@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<% include header %>
+
+<body>
+    <div id="wrapper">
+
+	<% include sidebar %>
+	
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+        	<% include menubutton %>
+			<div class="container-fluid">
+    			<div class="row">
+				        <div class="col-lg-12">
+				            <h1>Dashboard</h1>
+									<div class="row">
+								  		<div class="col-md-4">
+								  			<h3>Plant</h3>
+								  			<!-- Single button -->
+											<div class="btn-group">
+											  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											    </span><span class="glyphicon glyphicon-cog"></span><span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu">
+											    <li><a href="#">Settings</a></li>
+											    <li role="separator" class="divider"></li>
+											    <li><a href="#">Delete plant</a></li>
+											  </ul>
+											</div>
+								  		</div>
+							  			<div class="col-md-4">.col-md-4</div>
+								  		<div class="col-md-4">.col-md-4</div>
+									</div>
+				        </div>
+				    </div>
+				</div>
+			
+			<hr/>
+			
+			<% include footer %>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
